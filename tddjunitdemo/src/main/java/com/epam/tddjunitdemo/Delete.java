@@ -20,6 +20,33 @@ public class Delete
 		{
 			result = string.substring(0,stringLength);
 		}
+		if(stringLength<=1 && stringLength!=0 && result.charAt(0)=='A')
+		{
+			StringBuffer sb=new StringBuffer(result);
+			sb.delete(0,1);
+			return sb.toString();
+		}
+		else if(stringLength<=1)
+		{
+			return result;
+		}
+		if(result.charAt(0)=='A' && result.charAt(1)=='A')
+		{
+			StringBuffer sb=new StringBuffer(result);
+			sb.delete(0,2);
+			return sb.toString();
+		}
+		else if(result.charAt(0)=='A') {
+				StringBuffer sb=new StringBuffer(result);
+				sb.delete(0,1);
+				return sb.toString();
+			}
+		else if(result.charAt(1)=='A')
+			{
+				StringBuffer sb=new StringBuffer(result);
+				sb.delete(1,2);
+				return sb.toString();
+			}
 		return result;
 	}
 }
