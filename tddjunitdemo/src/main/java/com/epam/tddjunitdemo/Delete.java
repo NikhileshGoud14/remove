@@ -20,6 +20,7 @@ public class Delete
 		{
 			result = string.substring(0,stringLength);
 		}
+		else
 		if(stringLength<=1 && stringLength!=0 && result.charAt(0)=='A')
 		{
 			StringBuffer sb=new StringBuffer(result);
@@ -30,6 +31,7 @@ public class Delete
 		{
 			return result;
 		}
+		else
 		if(result.charAt(0)=='A' && result.charAt(1)=='A')
 		{
 			StringBuffer sb=new StringBuffer(result);
